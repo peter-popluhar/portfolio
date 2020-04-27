@@ -1,0 +1,25 @@
+@import "../../style/media-queries";
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+
+  @include lg {
+    margin-bottom: 0;
+  }
+}
+
+li {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+span {
+  background-color: #333;
+  font-size: 11px;
+  padding: 3px 5px;
+  color: #fff;
+}

@@ -1,0 +1,31 @@
+typography: 
+- not pixels
+- make reusable components
+
+cms:
+- ...
+
+images: 
+- retina
+- source sets
+- lazyload ?
+- webp ?
+
+theme switcher:
+
+
+styles:
+- custom properties
+
+semantic: 
+- aria
+
+other sections:
+- about me
+- skillset
+- contact
+
+icons:
+
+load page:
+- loading

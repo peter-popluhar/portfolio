@@ -1,0 +1,36 @@
+@import "../../style/media-queries";
+
+header {
+  overflow: hidden;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: var(--header-z-index);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: all var(--default-transition-time);
+  max-height: var(--header-max-height);
+
+  @include md {
+    max-height: none;
+  }
+}
+
+.header-is-floating {
+  padding: 8px;
+  max-height: var(--floating-header-max-height);
+  box-shadow: rgba(0, 0, 0, 0.12) 0 8px 24px 0;
+
+  @include md {
+    max-height: none;
+    padding: 8px;
+  }
+}
+
+.js-intersection-detector {
+  height: 1px;
+  width: 100%;
+  background-color: transparent;
+}

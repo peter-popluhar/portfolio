@@ -1,0 +1,25 @@
+:global(:root){
+  --default-text-color: #2F3744;
+  --logo-color: #000;
+  --default-bg-color: #fff;
+  --default-font-family: Roboto, Helvetica, Arial, sans-serif;
+  --header-max-height: 70px;
+  --floating-header-max-height: 50px;
+  --default-transition-time: .4s;
+  --header-z-index: 10;
+  
+}
+
+:global(.theme--bw) {
+  --page-bg: #fff;
+  --default-text-color: #2F3744;
+  --theme-grayscale-filter: grayscale(1);
+  --them-opacity: .8;
+}
+
+:global(.theme--color) {
+  --page-bg: grey;
+  --default-text-color: red;
+  --theme-grayscale-filter: grayscale(0);
+  --theme-opacity: 1;
+}
