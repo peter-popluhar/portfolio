@@ -1,0 +1,91 @@
+@import "../../style/media-queries";
+@import "../../style/mixins";
+
+h1 {
+  text-transform: uppercase;
+  color: var(--logo-color);
+  font-weight: 500;
+  transition: all var(--default-transition-time);
+  @include fontSize(20);
+  letter-spacing: 4px;
+
+  @include sm {
+    @include fontSize(24);
+  }
+
+  @include md {
+    @include fontSize(32);
+  }
+}
+
+span {
+  display: block;
+  position: relative;
+  @include fontSize(10);
+  font-weight: 300;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  text-align: right;
+
+  @include sm {
+    @include fontSize(12);
+  }
+
+  @include md {
+    @include fontSize(18);
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    animation: animateBgWidth 1.5s ease-out forwards;
+
+    @include rwd(1340) {
+      animation: animateBg 1.5s ease-out forwards;
+    }
+  }
+}
+
+@keyframes animateBgWidth {
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes animateBg {
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.transform-font-size {
+  @include fontSize(12);
+  letter-spacing: 2px;
+
+  @include sm {
+    @include fontSize(18);
+  }
+
+  @include md {
+    @include fontSize(24);
+  }
+
+  span {
+    @include fontSize(8);
+
+    @include sm {
+      @include fontSize(10);
+    }
+
+    @include md {
+      @include fontSize(14);
+    }
+  }
+}

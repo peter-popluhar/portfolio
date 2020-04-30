@@ -1,20 +1,16 @@
 @import "../../style/media-queries";
+@import "../../style/mixins";
 
 .portfolio-item {
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   padding: 20px 10px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 8px 24px 0;
+  text-decoration: none;
 
   @include md {
     flex-wrap: wrap;
     flex-direction: row;
-  }
-
-  @include xl {
-    box-shadow: none;
-    border-bottom: 1px solid #000;
+    justify-content: space-between;
   }
 
   &:hover {
@@ -39,11 +35,11 @@
 .content-holder {
 
   @include md {
-    flex: 0 0 40%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    flex: 0 0 40%;
     padding-right: 20px;
   }
 
@@ -57,57 +53,68 @@
 }
 
 h2 {
-  font-size: 20px;
-  line-height: 26px;
   font-weight: 400;
-  padding-bottom: 8px;
   position: sticky;
-  top: 50px;
+  top: var(--header-height-floating);
   background-color: #fff;
   z-index: 2;
+  text-align: center;
+  padding-bottom: 12px;
+  
+  @include sm {
+    top: var(--header-height-floating-sm);
+  }
 
   @include md {
+    top: var(--header-height-floating-md);
     flex: 0 0 100%;
+    text-align: left;
   }
 
   @include lg {
     width: 100%;
     flex: 0 0 auto;
-    top: 50px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    line-height: 42px;
+    padding: 10px 0;
+  }
+
+  @include rwd(1340) {
+    top: -1px;
+  }
+
+  &.header-is-floating {
+    padding-bottom: 6px;
   }
 }
 
 h3 {
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 8px;
   font-weight: 300;
+  color: var(--color-text);
+  margin-bottom: 12px;
+  @include fontSize(16);
 
-  @include lg {
-    margin-bottom: 20px;
+  @include sm {
+    @include fontSize(20);
+  }
+
+  @include md {
+    @include fontSize(24);
   }
 }
 
 p {
-  font-size: 14px;
-  line-height: 18px;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   font-weight: 300;
+  @include fontSize(14);
 
   @include lg {
     margin-bottom: 16px;
+    @include fontSize(16);
   }
 }
 
 .frame {
-  overflow: hidden;
   position: relative;
-  filter: var(--theme-grayscale-filter);
-  opacity: var(--theme-opacity);
-  transition: all .2s ease-in-out;
+  overflow: hidden;
 
   @include md {
     flex: 0 0 60%;
@@ -140,7 +147,7 @@ p {
   background-repeat: no-repeat;
   background-position: 0 0 ;
   opacity: 0;
-  transition: all .6s ease-in-out;
+  transition: all var(--default-transition-time) ease-in-out;
 
   &-1 {
     background-position: 0 0;
@@ -190,4 +197,14 @@ p {
     background-position: -630px 0;
     transform: translateY(40px);
   }
+}
+
+hr {
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 20px);
+  background-color: var(--color-muted);
+  transform: translateX(10px);
+  border: 0;
 }

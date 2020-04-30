@@ -1,5 +1,6 @@
 <script>
   import Labels from '../labels/labels.svelte'
+  import { isHeaderFloating } from '../../stores'
   
 	export let slug
 	export let name
@@ -16,7 +17,7 @@
 </style>
 
 <a rel='prefetch' href={slug} class="portfolio-item">
-	<h2>{name}</h2>
+	<h2 class="{$isHeaderFloating ? 'header-is-floating' : ''}">{name}</h2>
 	<div class="content-holder">
 		<h2>{name}</h2>
 		<h3>{role}</h3>
@@ -39,3 +40,4 @@
     </div>
   </div>
 </a>
+<hr />

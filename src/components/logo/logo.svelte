@@ -1,15 +1,13 @@
 <script>
-	import LogoTop from './../logo/logo-top.svelte'
-	import LogoBottom from './../logo/logo-bottom.svelte'
+  import { isHeaderFloating } from '../../stores'
 </script>
 
 <style lang="scss">
-	a {
-		text-decoration: none;
-	}
+  @import "logo.scss";
 </style>
 
-<a href=".">
-	<LogoTop />
-	<LogoBottom />
-</a>
+
+<h1 class="{$isHeaderFloating ? 'transform-font-size' : ''}">
+  Peter Popluhar
+  <span>/* creative front-end coder */</span>
+</h1>

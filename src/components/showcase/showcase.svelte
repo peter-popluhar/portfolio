@@ -15,16 +15,17 @@
   <div class="head">
     <Breadcrumbs name={name} />
     <h2>{name}</h2>
-    <p>{role}</p>
   </div>
   
-  
-  <ul class="description">
-    {#each jobDescription as item}
-      <li>{item}</li>
-    {/each}
-    <li>Visit page: <a href="{link}" target="_blank">{link}</a></li>
-  </ul>
+  <div class="description">
+    <h3>{role}</h3>
+    <ul>
+      {#each jobDescription as item}
+        <li>{item}</li>
+      {/each}
+    </ul>
+    <p>Visit page: <a href="{link}" class="styled-link" target="_blank">{link}</a></p>
+  </div>
 
   <div class="tags">
     <Labels items={tags} />

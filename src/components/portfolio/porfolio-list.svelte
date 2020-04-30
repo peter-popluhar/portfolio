@@ -3,10 +3,6 @@
   export let posts
 </script>
 
-<style lang="scss">
-  @import "porfolio-list";
-</style>
-
 <section>
 	{#each posts as post, i}
 		<PortfolioItem {...post} />

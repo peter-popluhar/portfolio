@@ -1,8 +1,8 @@
 import {onMount, onDestroy} from 'svelte'
-import { animateHeader } from '../../stores'
+import { isHeaderFloating } from '../../stores'
 
 const animateHeaderFn = (value) => {
-	animateHeader.set(value);
+  isHeaderFloating.set(value);
 }
 
 const handleIntersection = entries => {

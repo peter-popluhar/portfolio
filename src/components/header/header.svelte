@@ -1,5 +1,5 @@
 <script>
-	import { animateHeader } from '../../stores'
+	import { isHeaderFloating } from '../../stores'
 	import {handleHeader} from './header'
 	import {onMount} from 'svelte'
 	import Logo from './../logo/logo.svelte'
@@ -17,10 +17,12 @@
 </style>
 
 <div class="js-intersection-detector"></div>
-<header class="{$animateHeader ? 'header-is-floating' : ''}">
-	<Logo />
+<header class="{$isHeaderFloating ? 'header-is-floating' : ''}">
+  <a href=".">
+	  <Logo />
+  </a>
 
-	<ThemeSwitcher />
+<!--	<ThemeSwitcher />-->
 
 </header>
 

@@ -4,16 +4,13 @@ ol {
 }
 
 li {
-  font-size: 14px;
-  line-height: 18px;
   font-weight: 300;
-  color: #6c757d;
 
   &:not(:first-child) {
     &:before {
       display: inline-block;
       padding: 0 8px;
-      color: #6c757d;
+      color: var(--color-muted-10);
       content: "/";
     }
   }
