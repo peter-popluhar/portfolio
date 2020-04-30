@@ -1,9 +1,7 @@
-typography: 
-- not pixels
-- make reusable components
-
 cms:
 - ...
+
+grid should make paddin-right/left ??? 
 
 images: 
 - retina
@@ -12,10 +10,6 @@ images:
 - webp ?
 
 theme switcher:
-
-
-styles:
-- custom properties
 
 semantic: 
 - aria
@@ -29,3 +23,7 @@ icons:
 
 load page:
 - loading
+
+all spaces in em
+
+progress bar of scrolling

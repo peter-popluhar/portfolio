@@ -3,6 +3,7 @@
   "description": "",
   "version": "0.0.1",
   "scripts": {
+    "clean": "rm -rf ./__sapper__",
     "dev": "sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy",
@@ -10,12 +11,13 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "clean": "rm -rf ./__sapper__"
+    "deploy": "rm -rf ./__sapper__ && sapper export --legacy && now"
   },
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
-    "sirv": "^0.4.0"
+    "sirv": "^0.4.0",
+    "svelte-icons": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

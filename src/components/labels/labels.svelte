@@ -9,7 +9,7 @@
 <ul>
   {#each items as item, i}
     <li>
-      <span>
+      <span class="text--xs">
         {item}
       </span>
     </li>

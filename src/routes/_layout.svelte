@@ -7,7 +7,7 @@
 	@import "./../style/global.scss";
 </style>
 
-<div class="theme--{$theme}">
-<Header />
+<div class="theme--{$theme}" id="top">
+  <Header />
   <slot></slot>
 </div>

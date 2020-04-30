@@ -7,8 +7,8 @@
 </style>
 
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href=".">Home</a></li>
-    <li class="breadcrumb-item active">{name}</li>
+  <ol>
+    <li><a href="." class="text-normal styled-link">Home</a></li>
+    <li class="text-normal active">{name}</li>
   </ol>
 </nav>
