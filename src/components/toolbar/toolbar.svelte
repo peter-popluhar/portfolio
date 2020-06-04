@@ -1,18 +1,17 @@
 <script>
-  import { isHeaderFloating } from '../../stores'
-  import FaUserSecret from 'svelte-icons/fa/FaUserSecret.svelte'
-  import FaHistory from 'svelte-icons/fa/FaHistory.svelte'
-  import MdAssignmentInd from 'svelte-icons/md/MdAssignmentInd.svelte'
-  import FaAngleDoubleUp from 'svelte-icons/fa/FaAngleDoubleUp.svelte'
-
-  import MdFolderShared from 'svelte-icons/md/MdFolderShared.svelte'
-
-  import FaClock from 'svelte-icons/fa/FaClock.svelte'
+  import { isHeaderFloating } from "../../stores";
+  import FaUserSecret from "svelte-icons/fa/FaUserSecret.svelte";
+  import FaHistory from "svelte-icons/fa/FaHistory.svelte";
+  import MdAssignmentInd from "svelte-icons/md/MdAssignmentInd.svelte";
+  import FaAngleDoubleUp from "svelte-icons/fa/FaAngleDoubleUp.svelte";
+  import MdFolderShared from "svelte-icons/md/MdFolderShared.svelte";
+  import FaClock from "svelte-icons/fa/FaClock.svelte";
+  import ThemeSwitcher from "./../theme-switcher/theme-switcher.svelte";
 </script>
 
 <style lang="scss">
   @import "./../../style/media-queries";
-  
+
   nav {
     position: fixed;
     bottom: calc(var(--header-height-floating) * -1);
@@ -29,7 +28,7 @@
       bottom: calc(var(--header-height-floating-md) * -1);
       height: var(--header-height-floating-md);
     }
-    
+
     @include lg {
       bottom: auto;
       top: calc(var(--header-height-floating-md) * -1);
@@ -46,7 +45,7 @@
       width: 60px;
       height: 60vh;
     }
-    
+
     &.show-navigation {
       transform: translateY(-100%);
 
@@ -58,14 +57,14 @@
         transform: translate(0, -50%);
       }
     }
-    
   }
 
   .icon {
     color: #fff;
     width: 16px;
     height: 16px;
-    
+    display: block;
+
     @include md {
       width: 24px;
       height: 24px;
@@ -75,7 +74,7 @@
       color: #000;
     }
   }
-  
+
   ul {
     display: flex;
     align-items: center;
@@ -89,13 +88,25 @@
   }
 </style>
 
-<nav class="{$isHeaderFloating ? 'show-navigation' : ''}">
+<nav class={$isHeaderFloating ? 'show-navigation' : ''}>
   <ul>
-    <li class="icon"><a href="#about"><MdAssignmentInd /></a></li>
-    <li class="icon"><FaHistory /></li>
-    <li class="icon"><FaClock /></li>
-    <li class="icon">
-      <a href="#top"><FaAngleDoubleUp /></a>
-      </li>
+    <li>
+      <a href="#profile" class="icon">
+        <MdAssignmentInd />
+      </a>
+    </li>
+    <li>
+      <a href="#timeline" class="icon">
+        <FaClock />
+      </a>
+    </li>
+    <li>
+      <ThemeSwitcher />
+    </li>
+    <li>
+      <a href="#top" class="icon">
+        <FaAngleDoubleUp />
+      </a>
+    </li>
   </ul>
 </nav>

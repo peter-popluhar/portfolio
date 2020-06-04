@@ -1,6 +1,6 @@
-:global(:root){
+:global(:root) {
   --font-primary: Roboto, Helvetica, Arial, sans-serif;
-  
+
   /* colors */
   --color-text: #535e70;
   --color-text-heading: #000;
@@ -9,10 +9,10 @@
   --color-success: #0f9d58;
   --color-calmdown: #666de9;
   --logo-color: #000;
-  
+
   //--default-text-color: #2F3744;
   //--default-bg-color: #fff;
-  
+
   --header-height: 56px;
   --header-height-sm: 69px;
   --header-height-md: 89px;
@@ -21,21 +21,5 @@
   --header-height-floating-md: 62px;
   --header-z-index: 10;
 
-  --default-transition-time: .4s;
+  --default-transition-time: 0.4s;
 }
-
-:global(.theme--bw) {
-  //--page-bg: #fff;
-  //--default-text-color: #2F3744;
-  //--theme-grayscale-filter: grayscale(1);
-  //--them-opacity: .8;
-}
-
-:global(.theme--color) {
-  //--page-bg: grey;
-  //--default-text-color: red;
-  //--theme-grayscale-filter: grayscale(0);
-  //--theme-opacity: 1;
-}
-
-

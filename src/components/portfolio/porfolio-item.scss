@@ -14,7 +14,6 @@
   }
 
   &:hover {
-
     .frame {
       opacity: 1;
     }
@@ -33,7 +32,6 @@
 }
 
 .content-holder {
-
   @include md {
     display: flex;
     align-items: flex-start;
@@ -60,7 +58,7 @@ h2 {
   z-index: 2;
   text-align: center;
   padding-bottom: 12px;
-  
+
   @include sm {
     top: var(--header-height-floating-sm);
   }
@@ -145,57 +143,23 @@ p {
   height: 100%;
   background-size: 700px 320px;
   background-repeat: no-repeat;
-  background-position: 0 0 ;
+  background-position: 0 0;
   opacity: 0;
   transition: all var(--default-transition-time) ease-in-out;
+  transform: translateY(-40px);
+}
 
-  &-1 {
-    background-position: 0 0;
-    transform: translateY(-40px);
-  }
+$columns: 10;
+$a: 0;
 
-  &-2 {
-    background-position: -70px 0;
-    transform: translateY(40px);
-  }
+@for $i from 2 through $columns {
+  $a: $a + 70px;
+  .slice-#{$i} {
+    background-position-x: -#{$a};
 
-  &-3 {
-    background-position: -140px 0;
-    transform: translateY(-40px);
-  }
-
-  &-4 {
-    background-position: -210px 0;
-    transform: translateY(40px);
-  }
-
-  &-5 {
-    background-position: -280px 0;
-    transform: translateY(-40px);
-  }
-
-  &-6 {
-    background-position: -350px 0;
-    transform: translateY(40px);
-  }
-
-  &-7 {
-    background-position: -420px 0;
-    transform: translateY(-40px);
-  }
-
-  &-8 {
-    background-position: -490px 0;
-    transform: translateY(40px);
-  }
-
-  &-9 {background-position: -560px 0;
-    transform: translateY(-40px);
-  }
-
-  &-10 {
-    background-position: -630px 0;
-    transform: translateY(40px);
+    @if $i % 2 == 0 {
+      transform: translateY(40px);
+    }
   }
 }
 
