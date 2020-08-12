@@ -25,7 +25,7 @@
     <Labels items={tags} />
   </div>
   <div class="frame">
-    <img src={listingPoster} alt={name} class="" />
+    <img src={listingPoster} alt={name} class="img" />
     <div class="slices">
       {#each Array(10) as _, i}
         <div

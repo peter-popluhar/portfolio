@@ -2,8 +2,9 @@
   --font-primary: Roboto, Helvetica, Arial, sans-serif;
 
   /* colors */
-  --color-text: #535e70;
-  --color-text-heading: #000;
+  //--color-text: #535e70;
+  --color-text: #2a2e3b;
+  --color-text-heading: var(--color-text);
   --color-muted: #535e703d;
   --color-muted-10: #535e70a8;
   --color-success: #0f9d58;

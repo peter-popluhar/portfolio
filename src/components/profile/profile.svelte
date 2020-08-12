@@ -1,25 +1,32 @@
 <script>
-
+  import IconYes from './icon-yes.svelte'
+  import Logos from './logos.svelte'
 </script>
 
 <style lang="scss">
-
+  @import "./profile";
 </style>
 
 <section id="profile">
-
-  <h1>I'm Creator of the Things</h1>
-  <h2>I'm JS, HTML & CSS Bounty Hunter</h2>
-  <h3>I'm Front end developer</h3>
-  <h4>Key skills & interests:</h4>
-  <ul>
-    <li>Responsive Web Design</li>
-    <li>Website Speed and Performance</li>
-    <li>CSS and JavaScript Frameworks</li>
-    <li>Version Control</li>
-    <li>Testing and Debugging</li>
-    <li>Browser Developer Tools</li>
-    <li>Building and Automation Tools</li>
-    <li>Command Line</li>
-  </ul>
+  <div>
+    <p class="text--md">I'm Creator of the Things</p>
+    <p class="text--md">I'm JS, HTML & CSS Bounty Hunter</p>
+    <p class=" text--primary">I'm Frontend Web developer</p>
+    <div>
+      <Logos />
+    </div>
+  </div>
+  <div>
+    <p class="text--md">Key skills & interests:</p>
+    <ul>
+      <li><IconYes /> <span>Responsive Web Design</span></li>
+      <li><IconYes /> <span>Website Speed and Performance</span></li>
+      <li><IconYes /> <span>CSS and JavaScript Frameworks</span></li>
+      <li><IconYes /> <span>Version Control</span></li>
+      <li><IconYes /> <span>Testing and Debugging</span></li>
+      <li><IconYes /> <span>Browser Developer Tools</span></li>
+      <li><IconYes /> <span>Building and Automation Tools</span></li>
+      <li><IconYes /> <span>Command Line</span></li>
+    </ul>
+  </div>
 </section>

@@ -4,7 +4,7 @@
 .portfolio-item {
   display: flex;
   flex-direction: column;
-  padding: 20px 10px;
+  padding: 20px 0;
   text-decoration: none;
 
   @include md {
@@ -167,8 +167,14 @@ hr {
   height: 1px;
   margin: 0;
   padding: 0;
-  width: calc(100% - 20px);
   background-color: var(--color-muted);
-  transform: translateX(10px);
   border: 0;
+}
+
+.img {
+  display: none;
+  
+  @include md {
+    display: inline-block;
+  }
 }
