@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio",
+  "name": "portfolio",
   "description": "",
   "version": "0.0.1",
   "scripts": {
@@ -11,7 +11,7 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "deploy": "rm -rf ./__sapper__ && sapper export --legacy && now"
+    "deploy": "rm -rf ./__sapper__ && sapper export --legacy && vercel"
   },
   "dependencies": {
     "compression": "^1.7.1",

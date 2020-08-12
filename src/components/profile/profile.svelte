@@ -19,14 +19,14 @@
   <div>
     <p class="text--md">Key skills & interests:</p>
     <ul>
-      <li><IconYes /> <span>Responsive Web Design</span></li>
-      <li><IconYes /> <span>Website Speed and Performance</span></li>
-      <li><IconYes /> <span>CSS and JavaScript Frameworks</span></li>
-      <li><IconYes /> <span>Version Control</span></li>
-      <li><IconYes /> <span>Testing and Debugging</span></li>
-      <li><IconYes /> <span>Browser Developer Tools</span></li>
-      <li><IconYes /> <span>Building and Automation Tools</span></li>
-      <li><IconYes /> <span>Command Line</span></li>
+      <li><IconYes /> Responsive Web Design</li>
+      <li><IconYes /> Website Speed and Performance</li>
+      <li><IconYes /> CSS and JavaScript Frameworks</li>
+      <li><IconYes /> Version Control</li>
+      <li><IconYes /> Testing and Debugging</li>
+      <li><IconYes /> Browser Developer Tools</li>
+      <li><IconYes /> Building and Automation Tools</li>
+      <li><IconYes /> Command Line</li>
     </ul>
   </div>
 </section>

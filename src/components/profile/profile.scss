@@ -37,16 +37,16 @@ section {
 
 ul {
   padding-top: 16px;
+  
+  @include lg {
+    column-count: 2;
+  }
 }
 
 li {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
-
-  span {
-    margin-left: 10px;
-  }
 }
 
 p {
