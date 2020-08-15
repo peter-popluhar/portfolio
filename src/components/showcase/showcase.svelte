@@ -37,7 +37,7 @@
               type="video/mp4">
     </video>
 
-    <img src="{img.listingPoster}" alt="">
+    <img src="{img.imgXl}" alt="">
       
   </div>
 </div>

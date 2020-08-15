@@ -26,6 +26,7 @@
       <li><IconYes /> Testing and Debugging</li>
       <li><IconYes /> Building and Automation Tools</li>
       <li><IconYes /> Command Line</li>
+      <li><IconYes /> UI pattern libraries</li>
     </ul>
   </div>
 </section>

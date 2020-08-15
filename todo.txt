@@ -27,3 +27,5 @@ load page:
 all spaces in em
 
 progress bar of scrolling
+
+inersection observer refactoring

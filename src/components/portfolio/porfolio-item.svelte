@@ -1,6 +1,7 @@
 <script>
   import Labels from "../labels/labels.svelte";
   import { isHeaderFloating } from "../../stores";
+  import Picture from '../picture/picture.svelte' 
 
   export let slug;
   export let name;
@@ -9,7 +10,7 @@
   export let year;
   export let tags;
 
-  const { listingPoster, listingPosterSliced } = img;
+  const { imgSliced, imgMd, imgLg, imgXl, imgMd2x, imgLg2x,  imgXl2x} = img;
 </script>
 
 <style lang="scss">
@@ -25,12 +26,12 @@
     <Labels items={tags} />
   </div>
   <div class="frame">
-    <img src={listingPoster} alt={name} class="img" />
+    <Picture css="img" imgMd={imgMd} imgMd2x={imgMd2x} imgLg={imgLg} imgLg2x={imgLg2x} imgXl={imgXl} imgXl2x={imgXl2x} name={name}/>
     <div class="slices">
       {#each Array(10) as _, i}
         <div
           class="slice slice-{i + 1}"
-          style="background-image: url({listingPosterSliced})" />
+          style="background-image: url({imgSliced})" />
       {/each}
     </div>
 

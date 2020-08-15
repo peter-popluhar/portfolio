@@ -4,7 +4,6 @@
 section {
   text-align: center;
   padding-top: 24px;
-  margin-bottom: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +16,11 @@ section {
     column-gap: 16px;
   }
 
-  @include xl {
+  @include lg() {
+    padding-top: 48px;
+  }
+
+  @include rwd(1340) {
     padding-top: 0;
   }
 
