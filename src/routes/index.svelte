@@ -15,6 +15,7 @@
   import Profile from "../components/profile/profile.svelte";
   import Grid from "../components/layout/grid.svelte";
   import Toolbar from "../components/toolbar/toolbar.svelte";
+  import Quota from "../components/quota/quota.svelte";
   export let posts;
 </script>
 
@@ -27,5 +28,6 @@
   <Grid>
     <Profile />
     <Portfolio {posts} />
+    <Quota />
   </Grid>
 </main>

@@ -1,0 +1,20 @@
+@import "../../style/mixins";
+@import "../../style/media-queries";
+
+q {
+  position: relative;
+  color: var(--color-text);
+  display: block;
+  font-style: italic;
+  border-left: 6px solid var(--color-text);
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+p {
+  position: relative;
+  color: var(--color-text);
+  @include fontSize(20);
+  margin-top: 16px;
+  font-style: normal;
+}

@@ -9,5 +9,5 @@
 
 <h1 class="{$isHeaderFloating ? 'transform-font-size' : ''}">
   Peter Popluhar
-  <span>/* web developer */</span>
+  <span>/* frontend coder */</span>
 </h1>

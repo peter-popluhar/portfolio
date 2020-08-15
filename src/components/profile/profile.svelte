@@ -24,7 +24,6 @@
       <li><IconYes /> CSS and JavaScript Frameworks</li>
       <li><IconYes /> Version Control</li>
       <li><IconYes /> Testing and Debugging</li>
-      <li><IconYes /> Browser Developer Tools</li>
       <li><IconYes /> Building and Automation Tools</li>
       <li><IconYes /> Command Line</li>
     </ul>
