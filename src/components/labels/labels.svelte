@@ -1,5 +1,5 @@
 <script>
-  export let items
+  export let tags
 </script>
 
 <style lang="scss">
@@ -7,10 +7,10 @@
 </style>
 
 <ul>
-  {#each items as item, i}
+  {#each tags as {tag}, i}
     <li>
       <span class="text--xs">
-        {item}
+        {tag}
       </span>
     </li>
   {/each}

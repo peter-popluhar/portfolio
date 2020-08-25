@@ -145,7 +145,7 @@ p {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0;
-  transition: all var(--default-transition-time) ease-in-out;
+  transition: all .8s ease-in-out;
   transform: translateY(-40px);
 }
 

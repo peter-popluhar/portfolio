@@ -1,37 +1,35 @@
 <script>
   import Labels from "../labels/labels.svelte";
   import { isHeaderFloating } from "../../stores";
-  import Picture from '../picture/picture.svelte' 
-
-  export let slug;
-  export let name;
-  export let role;
-  export let img;
-  export let year;
-  export let tags;
-
-  const { imgSliced, imgMd, imgLg, imgXl, imgMd2x, imgLg2x,  imgXl2x} = img;
+  import Picture from '../picture/picture.svelte'
+  import PrismicDOM from 'prismic-dom';
+  import { Client, linkResolver } from '../../../prismic-config';
+  
+  export let post;
+  const {data} = post
+  const {title, position, tags, year, image, sliced_image} = data
+  const {md, lg, xl} = image;
 </script>
 
 <style lang="scss">
   @import "porfolio-item";
 </style>
 
-<a rel="prefetch" href={slug} class="portfolio-item">
-  <h2 class={$isHeaderFloating ? 'header-is-floating' : ''}>{name}</h2>
+<a rel="prefetch" href={linkResolver(post)} class="portfolio-item">
+  <h2 class={$isHeaderFloating ? 'header-is-floating' : ''}>{PrismicDOM.RichText.asText(title)}</h2>
   <div class="content-holder">
-    <h2>{name}</h2>
-    <h3>{role}</h3>
-    <p>{year}</p>
-    <Labels items={tags} />
+    <h2>{PrismicDOM.RichText.asText(title)}</h2>
+    <h3>{PrismicDOM.RichText.asText(position)}</h3>
+    <p>{PrismicDOM.RichText.asText(year)}</p>
+    <Labels tags={tags} />
   </div>
   <div class="frame">
-    <Picture css="img" imgMd={imgMd} imgMd2x={imgMd2x} imgLg={imgLg} imgLg2x={imgLg2x} imgXl={imgXl} imgXl2x={imgXl2x} name={name}/>
+    <Picture css="img" imgMd={md.url} imgLg={lg.url} imgXl={xl.url} name={PrismicDOM.RichText.asText(title)}/>
     <div class="slices">
       {#each Array(10) as _, i}
         <div
           class="slice slice-{i + 1}"
-          style="background-image: url({imgSliced})" />
+          style="background-image: url({sliced_image.url})" />
       {/each}
     </div>
 

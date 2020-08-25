@@ -5,8 +5,6 @@
 
 <section>
 	{#each posts as post, i}
-		<PortfolioItem {...post} />
+		<PortfolioItem post={post} />
 	{/each}
 </section>
-
-

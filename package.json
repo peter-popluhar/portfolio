@@ -16,6 +16,8 @@
   "dependencies": {
     "compression": "^1.7.1",
     "polka": "next",
+    "prismic-dom": "^2.2.3",
+    "prismic-javascript": "^3.0.2",
     "sirv": "^0.4.0"
   },
   "devDependencies": {

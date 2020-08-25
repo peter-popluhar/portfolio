@@ -1,10 +1,10 @@
 <script>
+  import PrismicDOM from 'prismic-dom';
   import Labels from '../labels/labels.svelte'
   import Breadcrumbs from '../breadcrumbs/breadcrumbs.svelte'
   
-  export let post
-  
-  const {name, jobDescription, tags, role, video, img, link} = post
+  export let data
+  const {title, position, tags, year, link, job_description} = data
 </script>
 
 <style lang="scss">
@@ -13,31 +13,31 @@
 
 <div class="container">
   <div class="head">
-    <Breadcrumbs name={name} />
-    <h2>{name}</h2>
+    <Breadcrumbs name={PrismicDOM.RichText.asText(title)} />
+    <h2>{PrismicDOM.RichText.asText(title)}</h2>
   </div>
   
   <div class="description">
-    <h3>{role}</h3>
+    <h3>{PrismicDOM.RichText.asText(position)}</h3>
     <ul>
-      {#each jobDescription as item}
+      {#each job_description as {item}}
         <li>{item}</li>
       {/each}
     </ul>
-    <p>Visit page: <a href="{link}" class="styled-link" target="_blank">{link}</a></p>
+    <p>Visit page: <a href={link} class="styled-link" target="_blank">{link}</a></p>
   </div>
 
   <div class="tags">
-    <Labels items={tags} />
+    <Labels tags={tags} />
   </div>
 
-  <div class="video-holder">
-    <video class="desk" playsinline="true" muted="true" loop autoplay>
-      <source src="{video}"
-              type="video/mp4">
-    </video>
+<!--  <div class="video-holder">-->
+<!--    <video class="desk" playsinline="true" muted="true" loop autoplay>-->
+<!--      <source src="{video}"-->
+<!--              type="video/mp4">-->
+<!--    </video>-->
 
-    <img src="{img.imgXl}" alt="">
-      
-  </div>
+<!--    <img src="{img.imgXl}" alt="">-->
+<!--      -->
+<!--  </div>-->
 </div>

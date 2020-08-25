@@ -1,6 +1,10 @@
 <script>
+  import PrismicDOM from 'prismic-dom';
   import IconYes from './icon-yes.svelte'
   import Logos from './logos.svelte'
+  
+  export let data;
+  const {profile_title_1, profile_title_2, profile_title_3, skills_title, skills, profile_icons} = data
 </script>
 
 <style lang="scss">
@@ -9,24 +13,19 @@
 
 <section id="profile">
   <div>
-    <p class="text--md">I'm Creator of the Things</p>
-    <p class="text--md">I'm JS, HTML & CSS Bounty Hunter</p>
-    <p class=" text--primary">I'm Frontend Web developer</p>
+    <p class="text--md">{profile_title_1}</p>
+    <p class="text--md"> {profile_title_2}</p>
+    <p class=" text--primary">{profile_title_3}</p>
     <div>
-      <Logos />
+      <Logos icons={profile_icons} />
     </div>
   </div>
   <div>
-    <p class="text--md">Key skills & interests:</p>
+    <p class="text--md">{PrismicDOM.RichText.asText(skills_title)}</p>
     <ul>
-      <li><IconYes /> Responsive Web Design</li>
-      <li><IconYes /> Website Speed and Performance</li>
-      <li><IconYes /> CSS and JavaScript Frameworks</li>
-      <li><IconYes /> Version Control</li>
-      <li><IconYes /> Testing and Debugging</li>
-      <li><IconYes /> Building and Automation Tools</li>
-      <li><IconYes /> Command Line</li>
-      <li><IconYes /> UI pattern libraries</li>
+      {#each skills as {skill}}
+        <li><IconYes />{skill}</li>
+      {/each}
     </ul>
   </div>
 </section>
