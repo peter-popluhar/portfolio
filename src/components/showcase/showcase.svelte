@@ -24,7 +24,7 @@
         <li>{item}</li>
       {/each}
     </ul>
-    <p>Visit page: <a href={link} class="styled-link" target="_blank">{link}</a></p>
+    <p>Visit page: <a href={link} class="styled-link" rel="noopener nofollow" target="_blank">{link}</a></p>
   </div>
 
   <div class="tags">

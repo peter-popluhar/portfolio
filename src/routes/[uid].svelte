@@ -24,7 +24,6 @@
 
   export let article;
   const {data} = article
-  console.log(data)
 </script>
 
 <svelte:head>
