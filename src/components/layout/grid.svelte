@@ -2,11 +2,9 @@
   @import "../../style/media-queries";
 	div {
     width: 100%;
-    padding-right: 16px;
-    padding-left: 16px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: var(--header-height);
+    padding: var(--header-height) 16px var(--header-height-floating);
 
     @include sm {
       max-width: 542px;
@@ -20,6 +18,7 @@
 
     @include lg {
       max-width: 972px;
+      padding-bottom: 0;
     }
     
     @include xl {

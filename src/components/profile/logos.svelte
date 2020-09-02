@@ -5,6 +5,11 @@
   ul {
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    @include md {
+      justify-content: flex-start;
+    }
   }
   
   li {

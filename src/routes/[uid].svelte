@@ -21,6 +21,7 @@
   import {fadeIn} from '../utils/page-transition'
   import Grid from '../components/layout/grid.svelte'
   import Showcase from './../components/showcase/showcase.svelte'
+  import ThemeSwitcher from './../components/theme-switcher/theme-switcher.svelte'
 
   export let article;
   const {data} = article
@@ -31,8 +32,9 @@
 </svelte:head>
 
 <main in:fade={fadeIn}>
-
+  
   <Grid>
+    
     <Showcase data={data} />
   </Grid>
 </main>

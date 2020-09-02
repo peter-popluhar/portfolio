@@ -50,9 +50,11 @@ li {
   margin-bottom: 8px;
   display: flex;
   align-items: center;
+  color: var(--color-text);
 }
 
 p {
+  color: var(--color-text);
 
   &:nth-of-type(1) {
     margin-bottom: 12px;

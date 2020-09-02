@@ -31,6 +31,7 @@ header {
 .header-is-floating {
   padding: 0 5px;
   height: var(--header-height-floating);
+  
 
   @include sm {
     height: var(--header-height-floating-sm);
@@ -38,6 +39,9 @@ header {
 
   @include md {
     height: var(--header-height-floating-md);
+  }
+  @include lg {
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.12);
   }
 
   @include rwd(1340) {

@@ -3,7 +3,7 @@
 	import {handleHeader} from './header'
 	import {onMount} from 'svelte'
 	import Logo from './../logo/logo.svelte'
-	import ThemeSwitcher from './../theme-switcher/theme-switcher.svelte'
+	
 
 	onMount(() => {
 		const observedItem = document.querySelector('.js-intersection-detector');
@@ -21,8 +21,5 @@
   <a href=".">
 	  <Logo />
   </a>
-
-<!--	<ThemeSwitcher />-->
-
 </header>
 
