@@ -48,9 +48,7 @@
 <Toolbar />
 
 <main in:fly={flyIn}>
-  <Grid>
-    <Profile data={homepage.data} />
-    <Portfolio posts={posts} />
-    <Quota author={quota_author} text={quota_text} />
-  </Grid>
+  <Profile data={homepage.data} />
+  <Portfolio posts={posts} />
+  <Quota author={quota_author} text={quota_text} />
 </main>

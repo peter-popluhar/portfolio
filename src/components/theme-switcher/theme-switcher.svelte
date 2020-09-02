@@ -14,6 +14,7 @@
 
 <div>
   <label id="switch" on:click={() => handleTheme(themeValue)}>
+    Change theme color
     <input type="checkbox" id="slider" bind:checked={themeValue} />
     <svg>
       <path

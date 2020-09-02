@@ -11,6 +11,7 @@ nav {
   background: #fff;
   transition: all var(--default-transition-time) ease;
   z-index: var(--header-z-index);
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
 
   @include md {
     bottom: calc(var(--header-height-floating-md) * -1);
@@ -25,6 +26,7 @@ nav {
     transform: translateY(-100%);
     background-color: #fff;
     width: 50vw;
+    box-shadow: none;
   }
 
   @include rwd(1340) {

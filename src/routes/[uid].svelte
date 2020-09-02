@@ -32,9 +32,5 @@
 </svelte:head>
 
 <main in:fade={fadeIn}>
-  
-  <Grid>
-    
-    <Showcase data={data} />
-  </Grid>
+  <Showcase data={data} />
 </main>
