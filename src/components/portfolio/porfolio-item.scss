@@ -113,7 +113,7 @@ p {
 .frame {
   position: relative;
   overflow: hidden;
-  filter: var(--frame-filter);
+  filter: var(--filter);
   text-align: center;
 
   @include md {

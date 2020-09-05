@@ -21,7 +21,7 @@
 
   --default-transition-time: 0.4s;
   
-  --frame-filter: grayscale(1);
+  --filter: grayscale(1);
   --label-color: var(--color-text);
   --label-border-color: var(--color-text);
   --label-bg-color: transparent;
@@ -29,7 +29,7 @@
 
 :global(.theme--color) {
   --color-text: var(--color-text-light);
-  --frame-filter: grayscale(0);
+  --filter: grayscale(0);
   --label-color: #fff;
   --label-border-color: var(--color-success);
   --label-bg-color: var(--color-success);

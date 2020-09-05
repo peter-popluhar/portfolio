@@ -4,6 +4,7 @@
 
   ul {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
@@ -13,6 +14,9 @@
   }
   
   li {
+    margin-bottom: 10px;
+    filter: var(--filter);
+    
     &:not(:last-of-type) {
       margin-right: 10px;
     }
