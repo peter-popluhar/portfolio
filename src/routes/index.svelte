@@ -1,15 +1,13 @@
 <script context="module">
-  import { onMount } from 'svelte';
   import Prismic from 'prismic-javascript';
   import PrismicDOM from 'prismic-dom';
-  import { Client, linkResolver } from '../../prismic-config.js';
+  import { Client } from '../../prismic-config.js';
 
   let homepage = null;
   let posts = null;
 
   export async function preload({ params, query }) {
     homepage = await Client.getSingle('homepage');
-    
 
     const postResponse = await Client.query(
             Prismic.Predicates.at('document.type', 'article'),
@@ -31,8 +29,6 @@
   import { flyIn } from "../utils/page-transition";
   import Portfolio from "../components/portfolio/porfolio-list.svelte";
   import Profile from "../components/profile/profile.svelte";
-  import Grid from "../components/layout/grid.svelte";
-  import Toolbar from "../components/toolbar/toolbar.svelte";
   import Quota from "../components/quota/quota.svelte";
 
   export let homepage;
@@ -44,8 +40,6 @@
 <svelte:head>
   <title>{PrismicDOM.RichText.asText(title)}</title>
 </svelte:head>
-
-<Toolbar />
 
 <main in:fly={flyIn}>
   <Profile data={homepage.data} />

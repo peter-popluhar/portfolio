@@ -3,13 +3,15 @@
 	import Footer from '../components/footer/footer.svelte';
   import { theme } from '../stores'
   import Grid from "../components/layout/grid.svelte";
+  import Toolbar from "../components/toolbar/toolbar.svelte";
 </script>
 
 <style lang="scss" global>
 	@import "./../style/global.scss";
 </style>
 
-<div class="theme--{$theme}" id="top">
+<Toolbar />
+<div class={$theme ? 'theme--color' : ''} id="top">
   <Grid>
     <Header />
     <slot></slot>

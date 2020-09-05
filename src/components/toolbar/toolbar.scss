@@ -10,7 +10,7 @@ nav {
   align-items: center;
   background: #fff;
   transition: all var(--default-transition-time) ease;
-  z-index: var(--header-z-index);
+  z-index: calc(var(--header-z-index) + 1);
   box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
 
   @include md {

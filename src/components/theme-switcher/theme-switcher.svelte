@@ -4,7 +4,7 @@
   let themeValue = false;
 
   const handleTheme = themeValue => {
-    theme.update(current => (themeValue ? "bw" : "color"));
+    theme.update(current => !themeValue);
   };
 </script>
 
