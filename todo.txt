@@ -3,14 +3,6 @@ cms:
 
 grid should make paddin-right/left ??? 
 
-images: 
-- retina
-- source sets
-- lazyload ?
-- webp ?
-
-theme switcher:
-
 semantic: 
 - aria
 
@@ -18,13 +10,6 @@ other sections:
 - about me
 - skillset
 - contact
-
-icons:
-
-load page:
-- loading
-
-all spaces in em
 
 progress bar of scrolling
 
