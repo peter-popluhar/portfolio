@@ -25,8 +25,8 @@
 </script>
 
 <script>
-  import { fly } from "svelte/transition";
-  import { flyIn } from "../utils/page-transition";
+  import { fade } from "svelte/transition";
+  import {fadeIn} from '../utils/page-transition'
   import Portfolio from "../components/portfolio/porfolio-list.svelte";
   import Profile from "../components/profile/profile.svelte";
   import Quota from "../components/quota/quota.svelte";
@@ -41,7 +41,7 @@
   <title>{PrismicDOM.RichText.asText(title)}</title>
 </svelte:head>
 
-<main in:fly={flyIn}>
+<main in:fade={fadeIn}>
   <Profile data={homepage.data} />
   <Portfolio posts={posts} />
   <Quota author={quota_author} text={quota_text} />
