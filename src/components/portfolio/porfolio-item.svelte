@@ -1,14 +1,13 @@
 <script>
   import Labels from "../labels/labels.svelte";
   import { isHeaderFloating } from "../../stores";
-  import Picture from '../picture/picture.svelte'
+  import ImageMain from '../image/image.svelte'
   import PrismicDOM from 'prismic-dom';
   import { Client, linkResolver } from '../../../prismic-config';
   
   export let post;
   const {data} = post
-  const {title, position, tags, year, image, sliced_image} = data
-  const {md, lg, xl} = image;
+  const {title, position, tags, year, bg_image, sliced_image} = data
 </script>
 
 <style lang="scss">
@@ -24,7 +23,7 @@
     <Labels tags={tags} />
   </div>
   <div class="frame">
-    <Picture css="img" imgMd={md.url} imgLg={lg.url} imgXl={xl.url} name={PrismicDOM.RichText.asText(title)}/>
+    <ImageMain image={bg_image.url} />
     <div class="slices">
       {#each Array(10) as _, i}
         <div

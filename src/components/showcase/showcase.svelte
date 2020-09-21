@@ -30,14 +30,4 @@
   <div class="tags">
     <Labels tags={tags} />
   </div>
-
-<!--  <div class="video-holder">-->
-<!--    <video class="desk" playsinline="true" muted="true" loop autoplay>-->
-<!--      <source src="{video}"-->
-<!--              type="video/mp4">-->
-<!--    </video>-->
-
-<!--    <img src="{img.imgXl}" alt="">-->
-<!--      -->
-<!--  </div>-->
 </div>
