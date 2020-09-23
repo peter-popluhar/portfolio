@@ -52,19 +52,12 @@
 
 h2 {
   font-weight: 400;
-  position: sticky;
-  top: var(--header-height-floating);
   background-color: #fff;
   z-index: 2;
   text-align: center;
   padding-bottom: 12px;
 
-  @include sm {
-    top: var(--header-height-floating-sm);
-  }
-
   @include md {
-    top: var(--header-height-floating-md);
     flex: 0 0 100%;
     text-align: left;
   }
@@ -169,7 +162,7 @@ hr {
   height: 1px;
   margin: 0;
   padding: 0;
-  background-color: var(--color-muted);
+  background-color: var(--color-muted-10);
   border: 0;
 }
 
