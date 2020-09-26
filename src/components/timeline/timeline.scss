@@ -1,0 +1,46 @@
+@import "../../style/mixins";
+@import "../../style/media-queries";
+
+svg {
+  max-width: 100%;
+  overflow: visible;
+}
+
+.timeline {
+  fill: none;
+  stroke: var(--color-text);
+  stroke-width: 2px;
+}
+
+.circle {
+  fill: var(--color-text);
+  visibility: hidden;
+
+  &--indicator  {
+    visibility: visible;
+  }
+}
+
+.text {
+  fill: var(--color-text);
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+
+  &--position {
+    transform: translateY(-20px);
+  }
+
+  &--company {
+
+  }
+
+  &--date {
+    transform: translateY(20px);
+  }
+
+  &--year {
+    fill: white;
+    transform: translate(-16px, 14px);
+    visibility: hidden;
+  }
+}

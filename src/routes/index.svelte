@@ -30,6 +30,7 @@
   import Portfolio from "../components/portfolio/porfolio-list.svelte";
   import Profile from "../components/profile/profile.svelte";
   import Quota from "../components/quota/quota.svelte";
+  import Timeline from "../components/timeline/timeline.svelte";
 
   export let homepage;
   export let posts;
@@ -43,6 +44,7 @@
 
 <main in:fade={fadeIn}>
   <Profile data={homepage.data} />
+  <Timeline />
   <Portfolio posts={posts} />
   <Quota author={quota_author} text={quota_text} />
 </main>
