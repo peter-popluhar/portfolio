@@ -1,8 +1,12 @@
 @import "../../style/mixins";
 @import "../../style/media-queries";
 
+section {
+  text-align: center;
+}
+
 svg {
-  max-width: 100%;
+  max-width: 600px;
   overflow: visible;
 }
 
@@ -22,19 +26,22 @@ svg {
 }
 
 .text {
-  fill: var(--color-text);
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  
+  font-family: var(--font-primary);
 
   &--position {
-    transform: translateY(-20px);
+    fill: var(--color-text);
+    @include fontSize(25, 25);
   }
 
   &--company {
-
+    fill: var(--color-text-light);
+    @include fontSize(20, 20);
+    transform: translateY(25px);
   }
 
   &--date {
+    display: none;
     transform: translateY(20px);
   }
 

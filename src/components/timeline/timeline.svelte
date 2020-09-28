@@ -54,7 +54,7 @@
     <circle class="circle circle--indicator" r="20px" cx="300" cy="20"></circle>
 
     <circle class="circle circle--1" r="20px" cx="300" cy="100"></circle>
-    <text class="text text--1 text--position" x="0" y="100">Front-end web developer</text>
+    <text class="text text--1 text--position" x="0" y="100">Front-end developer</text>
     <text class="text text--1 text--company" x="0" y="100">Socialbakers</text>
     <text class="text text--1 text--date" x="0" y="100">01/2019 - present</text>
     <text class="text--1 text--year" x="50%" y="90">2019</text>
