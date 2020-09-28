@@ -14,7 +14,11 @@
   onMount(() => {
     gsap.defaults({ease: "none"});
     gsap.set(".text", {autoAlpha: 0.4})
-    gsap.set(".circle--indicator", {yPercent: -50})
+    gsap.set(".progress", {
+      xPercent: -50,
+      yPercent: -50,
+      transformOrigin: "50% 50%"
+    })
 
     const tl = gsap.timeline({
       defaults: {
@@ -25,12 +29,12 @@
       }})
             .to(".circle--1", {scale: 1.5,}, 0.2)
             .to(".text--1", {autoAlpha: 1}, 0.2)
-            .to(".circle--2", {scale: 1.5,}, 0.4)
-            .to(".text--2", {autoAlpha: 1}, 0.4)
-            .to(".circle--3", {scale: 1.5,}, 0.6)
-            .to(".text--3", {autoAlpha: 1}, 0.6)
-            .to(".circle--4", {scale: 1.5,}, .8)
-            .to(".text--4", {autoAlpha: 1}, .8)
+            .to(".circle--2", {scale: 1.5,}, 0.35)
+            .to(".text--2", {autoAlpha: 1}, 0.35)
+            .to(".circle--3", {scale: 1.5,}, 0.48)
+            .to(".text--3", {autoAlpha: 1}, 0.48)
+            .to(".circle--4", {scale: 1.5,}, .65)
+            .to(".text--4", {autoAlpha: 1}, .65)
 
     const action = gsap.timeline({defaults: {duration: 1},
       scrollTrigger: {
@@ -39,8 +43,8 @@
         start: "top center",
         end: "bottom center",
       }})
-            .to(".circle--indicator", {duration: 0.01, autoAlpha: 1})
-            .to(".circle--indicator", {motionPath: {path: ".timeline", align: "#path"}}, 0)
+            .to(".progress", {duration: 0.01, autoAlpha: 1})
+            .to(".progress", {motionPath: {path: ".timeline", align: "#path", autoRotate: -140}}, 0)
             .add(tl, 0);
   })
 </script>
@@ -49,9 +53,8 @@
 
   <svg id="svg" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 600 500">
 
-    <path class="timeline" d="M 300 0 L 300 500" />
-
-    <circle class="circle circle--indicator" r="20px" cx="300" cy="20"></circle>
+    <path class="progress" d="m620.508.003c-4.685-.084-10.028 2.365-13.41 6.164-3.232.061-6.379 1.386-8.696 3.703-.135.133-.183.332-.124.512.06.181.216.312.404.339l3.854.552-.476.533c-.177.198-.168.499.02.687l6.427 6.427c.097.097.225.146.354.146.119 0 .238-.042.333-.127l.533-.476.552 3.854c.027.188.175.326.354.386.046.015.094.022.143.022.142 0 .287-.062.387-.161 2.285-2.285 3.61-5.432 3.671-8.664 3.803-3.389 6.272-8.73 6.163-13.409-.007-.266-.222-.481-.489-.488zm-4.608 8.632c-.487.487-1.127.731-1.768.731s-1.281-.244-1.768-.731c-.974-.975-.974-2.561 0-3.536.975-.975 2.561-.975 3.536 0s.975 2.562 0 3.536z"/>
+    <path class="timeline" d="M 600 0 C 300 100 550 350 0 500 " id="path"/>
 
     <circle class="circle circle--1" r="20px" cx="300" cy="100"></circle>
     <text class="text text--1 text--position" x="0" y="100">Front-end developer</text>
