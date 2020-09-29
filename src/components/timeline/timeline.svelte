@@ -16,6 +16,7 @@
     gsap.defaults({ease: "none"});
     gsap.set(".text", {autoAlpha: 0.4})
     gsap.set(".pointer", {
+      autoAlpha: 1,
       xPercent: -50,
       yPercent: -50,
       transformOrigin: "50% 50%"
