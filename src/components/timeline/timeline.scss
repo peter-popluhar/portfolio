@@ -44,13 +44,20 @@ svg {
     transform: translateY(25px);
 
     @include lg {
+      transform: translateY(12px);
       @include fontSize(10, 10);
     }
   }
 
   &--date {
     display: none;
-    transform: translateY(20px);
+
+    @include lg {
+      fill: var(--color-text-light);
+      transform: translateY(24px);
+      display: block;
+      @include fontSize(8, 8);
+    }
   }
 
   &--year {
