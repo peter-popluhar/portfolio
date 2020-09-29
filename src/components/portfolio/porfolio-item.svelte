@@ -16,14 +16,15 @@
   onMount(() => {
     let boxes = gsap.utils.toArray(".item");
 
-    boxes.forEach((box, i) => {
+    boxes.forEach((box) => {
       const animBoxes = gsap.fromTo(box, {autoAlpha: 0.1}, {duration: .2, autoAlpha: 1});
       ScrollTrigger.create({
         trigger: box,
         animation: animBoxes,
         scrub: 1,
-        start: 'top 60%',
-        end: 'bottom center',
+        start: 'top 70%',
+        end: 'bottom 60%',
+        markers: true,
       });
       
       const animHr = gsap.fromTo(box.nextElementSibling, {width: 0}, {width: '100%'});

@@ -1,6 +1,8 @@
 @import "../../style/media-queries";
 @import "../../style/mixins";
 
+$slice-position: 5px;
+
 .portfolio-item {
   display: flex;
   flex-direction: column;
@@ -140,8 +142,8 @@ p {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0;
-  transition: all .8s ease-in-out;
-  transform: translateY(-40px);
+  transition: all .5s ease-in-out;
+  transform: translateY(-$slice-position);
 }
 
 $columns: 10;
@@ -153,7 +155,7 @@ $a: 0;
     background-position-x: -#{$a};
 
     @if $i % 2 == 0 {
-      transform: translateY(40px);
+      transform: translateY($slice-position);
     }
   }
 }
