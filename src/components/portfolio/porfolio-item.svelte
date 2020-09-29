@@ -24,7 +24,6 @@
         scrub: 1,
         start: 'top 70%',
         end: 'bottom 60%',
-        markers: true,
       });
       
       const animHr = gsap.fromTo(box.nextElementSibling, {width: 0}, {width: '100%'});
