@@ -66,27 +66,27 @@
     <path class="timeline" d="M 600 0 C 300 100 550 350 0 500 " id="path"/>
 
     <circle class="circle circle--1" r="15px" cx="455" cy="100"></circle>
-    <text class="text text--1 text--position" x="0" y="100">Front-end developer</text>
+    <text class="text text--1 text--position" x="0" y="100">FE/JS developer</text>
     <text class="text text--1 text--company" x="0" y="100">Socialbakers</text>
-    <text class="text text--1 text--date" x="0" y="100">01/2019 - present</text>
+    <text class="text text--1 text--date" x="0" y="100">01/2017 - present</text>
     <text class="text--1 text--year" x="455" y="90">2019</text>
 
     <circle class=" circle circle--2" r="15px" cx="406" cy="200"></circle>
-    <text class="text text--2 text--position" x="0" y="200">Web coder</text>
-    <text class="text text--2 text--company" x="0" y="200">Socialbakers</text>
-    <text class="text text--2 text--date" x="0" y="200">01/2017 - 12/2018</text>
-    <text class="text--2 text--year" x="406" y="190">2017</text>
+    <text class="text text--2 text--position" x="0" y="200">Front-end developer</text>
+    <text class="text text--2 text--company" x="0" y="200">LMC</text>
+    <text class="text text--2 text--date" x="0" y="200">07/2015 - 12/2016</text>
+    <text class="text--2 text--year" x="406" y="190">2016</text>
 
     <circle class="circle circle--3" r="15px" cx="349" cy="300"></circle>
     <text class="text text--3 text--position" x="0" y="300">Web coder</text>
-    <text class="text text--3 text--company" x="0" y="300">LMC</text>
-    <text class="text text--3 text--date" x="0" y="300">07/2015 - 12/2016</text>
-    <text class="text--3 text--year" x="349" y="290">2016</text>
+    <text class="text text--3 text--company" x="0" y="300">AVG</text>
+    <text class="text text--3 text--date" x="0" y="300">01/2013 - 06/2015</text>
+    <text class="text--3 text--year" x="349" y="290">2013</text>
 
     <circle class="circle circle--4" r="15px" cx="250" cy="400"></circle>
     <text class="text text--4 text--position" x="0" y="400">Web coder - junior</text>
     <text class="text text--4 text--company" x="0" y="400">AVG</text>
-    <text class="text text--4 text--date" x="0" y="400">08/2011 - 06/2015</text>
+    <text class="text text--4 text--date" x="0" y="400">08/2011 - 12/2012</text>
     <text class="text--4 text--year" x="250" y="390">2011</text>
 
   </svg>

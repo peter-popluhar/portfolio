@@ -48,8 +48,8 @@
   <Portfolio posts={posts} />
   <Quota author={quota_author} text={quota_text} />
   <p class="text--sm">
-    * This site is build on Sapper for SSR, FE powered by Svelte and Scss. Animations with GSAP - Professional-grade JavaScript animation for the modern web.
+    * This site is build on Sapper for SSR, FE powered by Svelte and Scss. Animations with GSAP.
     Content is fetched from Prismic Headless CMS.
-    Deployment via vercel.com.
+    Deployment via github, vercel.com and webhooks.
   </p>
 </main>
