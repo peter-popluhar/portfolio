@@ -68,17 +68,17 @@
     <circle class="circle circle--1" r="15px" cx="455" cy="100"></circle>
     <text class="text text--1 text--position" x="0" y="100">FE/JS developer</text>
     <text class="text text--1 text--company" x="0" y="100">Socialbakers</text>
-    <text class="text text--1 text--date" x="0" y="100">01/2017 - present</text>
-    <text class="text--1 text--year" x="455" y="90">2019</text>
+    <text class="text text--1 text--date" x="0" y="100">12/2016 - present</text>
+    <text class="text--1 text--year" x="455" y="90">2016</text>
 
     <circle class=" circle circle--2" r="15px" cx="406" cy="200"></circle>
     <text class="text text--2 text--position" x="0" y="200">Front-end developer</text>
     <text class="text text--2 text--company" x="0" y="200">LMC</text>
     <text class="text text--2 text--date" x="0" y="200">07/2015 - 12/2016</text>
-    <text class="text--2 text--year" x="406" y="190">2016</text>
+    <text class="text--2 text--year" x="406" y="190">2015</text>
 
     <circle class="circle circle--3" r="15px" cx="349" cy="300"></circle>
-    <text class="text text--3 text--position" x="0" y="300">Web coder</text>
+    <text class="text text--3 text--position" x="0" y="300">Front-end developer</text>
     <text class="text text--3 text--company" x="0" y="300">AVG</text>
     <text class="text text--3 text--date" x="0" y="300">01/2013 - 06/2015</text>
     <text class="text--3 text--year" x="349" y="290">2013</text>
