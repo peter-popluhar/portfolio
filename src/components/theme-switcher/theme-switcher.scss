@@ -25,11 +25,14 @@ svg {
   top: -8px;
   transform: translate(-8px, 2px) rotate(90deg);
   transition: 0.4s;
+  path {
+    fill: green;
+  }
 }
 
 input:checked + svg {
   transform: translate(17px, 1px) rotate(-90deg);
   path {
-    fill: green;
+    fill: #0D0D0D;
   }
 }

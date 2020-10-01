@@ -11,7 +11,7 @@
 </style>
 
 <Toolbar />
-<div class={$theme ? 'theme--color' : ''} id="top">
+<div class={!$theme ? 'theme--color' : ''} id="top">
   <Grid>
     <Header />
     <slot></slot>
