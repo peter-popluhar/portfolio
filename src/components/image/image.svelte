@@ -5,7 +5,7 @@
 <style lang="scss">
   @import "../../style/media-queries";
   @import "../../style/mixins";
-  
+
   div {
     background-color: transparent;
     background-position: center center;
@@ -14,7 +14,6 @@
     width: 100%;
     height: 100%;
     max-width: 100%;
-    
 
     @include xl {
       background-size: 700px 320px;
@@ -23,6 +22,4 @@
   }
 </style>
 
-<div
-    style="background-image: url({image})" >
-</div>
+<div style="background-image: url({image})" />

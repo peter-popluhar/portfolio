@@ -51,17 +51,17 @@
   @import "porfolio-item";
 </style>
 
-<Lazy height={300}>
-  <a rel="prefetch" href={linkResolver(post)} class="portfolio-item item">
-    <h2 class={$isHeaderFloating ? 'header-is-floating' : ''}>
-      {PrismicDOM.RichText.asText(title)}
-    </h2>
-    <div class="content-holder">
-      <h2>{PrismicDOM.RichText.asText(title)}</h2>
-      <h3>{PrismicDOM.RichText.asText(position)}</h3>
-      <p>{PrismicDOM.RichText.asText(year)}</p>
-      <Labels {tags} />
-    </div>
+<a rel="prefetch" href={linkResolver(post)} class="portfolio-item item">
+  <h2 class={$isHeaderFloating ? 'header-is-floating' : ''}>
+    {PrismicDOM.RichText.asText(title)}
+  </h2>
+  <div class="content-holder">
+    <h2>{PrismicDOM.RichText.asText(title)}</h2>
+    <h3>{PrismicDOM.RichText.asText(position)}</h3>
+    <p>{PrismicDOM.RichText.asText(year)}</p>
+    <Labels {tags} />
+  </div>
+  <Lazy height={300}>
     <div class="frame">
       <ImageMain image={bg_image.url} />
       <div class="slices">
@@ -71,8 +71,7 @@
             style="background-image: url({sliced_image.url})" />
         {/each}
       </div>
-
     </div>
-  </a>
-  <hr />
-</Lazy>
+  </Lazy>
+</a>
+<hr />
