@@ -6,4 +6,6 @@
   @import "title";
 </style>
 
-<p><span data-letters="{name}">{name}</span></p>
+<p>
+  <span data-letters={name}>{name}</span>
+</p>

@@ -11,17 +11,17 @@ p {
   text-decoration: none;
   position: relative;
   display: inline-block;
-  
+
   &:hover {
     color: #242424;
-    
+
     &:after {
-      transform: translate3d(0,0,0);
+      transform: translate3d(0, 0, 0);
     }
   }
-  
+
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
@@ -29,16 +29,16 @@ p {
     right: 0;
     z-index: -1;
     background: #242424;
-    transform: translate3d(101%,0,0);
+    transform: translate3d(101%, 0, 0);
     transition: transform 0.5s;
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   }
 }
 
 span {
   display: block;
   position: relative;
-  
+
   &:before {
     content: attr(data-letters);
     position: absolute;
@@ -48,7 +48,7 @@ span {
     white-space: nowrap;
     width: 0;
     transition: width 0.5s;
-    transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   }
 }
 

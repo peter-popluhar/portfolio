@@ -1,10 +1,10 @@
 <script>
-  import PrismicDOM from 'prismic-dom';
-  import Labels from '../labels/labels.svelte'
-  import Breadcrumbs from '../breadcrumbs/breadcrumbs.svelte'
-  
-  export let data
-  const {title, position, tags, year, link, job_description} = data
+  import PrismicDOM from "prismic-dom";
+  import Labels from "../labels/labels.svelte";
+  import Breadcrumbs from "../breadcrumbs/breadcrumbs.svelte";
+
+  export let data;
+  const { title, position, tags, year, link, job_description } = data;
 </script>
 
 <style lang="scss">
@@ -16,18 +16,27 @@
     <Breadcrumbs name={PrismicDOM.RichText.asText(title)} />
     <h2>{PrismicDOM.RichText.asText(title)}</h2>
   </div>
-  
+
   <div class="description">
     <h3>{PrismicDOM.RichText.asText(position)}</h3>
     <ul>
-      {#each job_description as {item}}
+      {#each job_description as { item }}
         <li>{item}</li>
       {/each}
     </ul>
-    <p>Visit page: <a href={link} class="styled-link" rel="noopener nofollow" target="_blank">{link}</a></p>
+    <p>
+      Visit page:
+      <a
+        href={link}
+        class="styled-link"
+        rel="noopener nofollow"
+        target="_blank">
+        {link}
+      </a>
+    </p>
   </div>
 
   <div class="tags">
-    <Labels tags={tags} />
+    <Labels {tags} />
   </div>
 </div>

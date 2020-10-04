@@ -13,6 +13,7 @@ export const animateItems = () => {
       { autoAlpha: 0.1 },
       { duration: 0.2, autoAlpha: 1 }
     );
+
     ScrollTrigger.create({
       trigger: box,
       animation: animBoxes,
@@ -26,6 +27,7 @@ export const animateItems = () => {
       { width: 0 },
       { width: "100%" }
     );
+
     ScrollTrigger.create({
       trigger: box,
       animation: animHr,

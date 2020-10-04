@@ -142,7 +142,7 @@ p {
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   transform: translateY(-$slice-position);
 }
 
@@ -170,7 +170,7 @@ hr {
 
 .img {
   display: none;
-  
+
   @include md {
     display: inline-block;
   }

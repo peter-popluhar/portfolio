@@ -15,7 +15,7 @@ svg {
   fill: var(--color-text);
   visibility: hidden;
 
-  &--indicator  {
+  &--indicator {
     visibility: visible;
   }
 }
@@ -26,13 +26,12 @@ svg {
 }
 
 .text {
-  
   font-family: var(--font-primary);
 
   &--position {
     fill: var(--color-text);
     @include fontSize(25, 25);
-    
+
     @include lg {
       @include fontSize(15, 15);
     }

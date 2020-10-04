@@ -39,7 +39,7 @@ span {
     position: absolute;
     top: 0;
     right: 0;
-    content: '';
+    content: "";
     background: #fff;
     height: 100%;
     width: 100%;
@@ -52,14 +52,12 @@ span {
 }
 
 @keyframes animateBgWidth {
-
   100% {
     width: 0;
   }
 }
 
 @keyframes animateBg {
-
   100% {
     transform: translateY(100%);
   }

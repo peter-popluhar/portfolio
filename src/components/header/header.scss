@@ -6,7 +6,7 @@ header {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   height: var(--header-height);
   z-index: var(--header-z-index);
@@ -31,7 +31,6 @@ header {
 .header-is-floating {
   padding: 0 5px;
   height: var(--header-height-floating);
-  
 
   @include sm {
     height: var(--header-height-floating-sm);
@@ -41,7 +40,7 @@ header {
     height: var(--header-height-floating-md);
   }
   @include lg {
-    box-shadow: 0 8px 24px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
   }
 
   @include rwd(1340) {
@@ -68,9 +67,8 @@ a {
     writing-mode: vertical-rl;
     background-color: #fff;
   }
-  
-  .header-is-floating & {
 
+  .header-is-floating & {
     @include rwd(1340) {
       transform: translateY(-26px);
     }

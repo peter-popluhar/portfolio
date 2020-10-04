@@ -13,34 +13,34 @@ $screen-xl-min: 1200px;
 // Small devices
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
-	@content;
+    @content;
   }
 }
 
 // Medium devices
 @mixin md {
   @media (min-width: #{$screen-md-min}) {
-	@content;
+    @content;
   }
 }
 
 // Large devices
 @mixin lg {
   @media (min-width: #{$screen-lg-min}) {
-	@content;
+    @content;
   }
 }
 
 // Extra large devices
 @mixin xl {
   @media (min-width: #{$screen-xl-min}) {
-	@content;
+    @content;
   }
 }
 
 // Custom devices
 @mixin rwd($screen) {
-  @media (min-width: $screen+'px') {
-	@content;
+  @media (min-width: $screen+"px") {
+    @content;
   }
 }

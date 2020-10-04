@@ -1,6 +1,6 @@
 <style lang="scss">
   @import "../../style/media-queries";
-	div {
+  div {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -20,13 +20,13 @@
       max-width: 972px;
       padding-bottom: 0;
     }
-    
+
     @include xl {
       max-width: 1200px;
     }
-	}
+  }
 </style>
 
 <div>
-	<slot></slot>
+  <slot />
 </div>

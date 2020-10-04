@@ -37,10 +37,9 @@ section {
   }
 }
 
-
 ul {
   padding-top: 16px;
-  
+
   @include lg {
     column-count: 2;
   }
