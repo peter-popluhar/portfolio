@@ -66,7 +66,8 @@
       {#each Array(10) as _, i}
         <div
           class="slice slice-{i + 1}"
-          style="background-image: url({sliced_image.url})" />
+          style="background-image: none"
+          data-src="url({sliced_image.url})" />
       {/each}
     </div>
   </div>

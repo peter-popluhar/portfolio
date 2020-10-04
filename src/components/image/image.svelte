@@ -22,4 +22,7 @@
   }
 </style>
 
-<div style="background-image: url({image})" />
+<div
+  class="main-image"
+  style="background-image: none"
+  data-src="url({image})" />
