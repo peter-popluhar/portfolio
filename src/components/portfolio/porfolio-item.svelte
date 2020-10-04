@@ -7,7 +7,6 @@
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
   import { onMount } from "svelte";
-  import Lazy from "svelte-lazy";
 
   export let post;
   const { data } = post;
@@ -61,17 +60,15 @@
     <p>{PrismicDOM.RichText.asText(year)}</p>
     <Labels {tags} />
   </div>
-  <Lazy height={300}>
-    <div class="frame">
-      <ImageMain image={bg_image.url} />
-      <div class="slices">
-        {#each Array(10) as _, i}
-          <div
-            class="slice slice-{i + 1}"
-            style="background-image: url({sliced_image.url})" />
-        {/each}
-      </div>
+  <div class="frame">
+    <ImageMain image={bg_image.url} />
+    <div class="slices">
+      {#each Array(10) as _, i}
+        <div
+          class="slice slice-{i + 1}"
+          style="background-image: url({sliced_image.url})" />
+      {/each}
     </div>
-  </Lazy>
+  </div>
 </a>
 <hr />
